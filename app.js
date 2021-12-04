@@ -22,7 +22,7 @@ const path = require('path');
 app.use('/api/comment',placesRoutes);
 app.use('/api/favoris',favorisRoutes);
 
-app.listen(7000,()=>
+app.listen(PORT,()=>
 {
     console.log("running is done");
 });
