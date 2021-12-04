@@ -21,6 +21,9 @@ const path = require('path');
 // app.use(express.json());
 app.use('/api/comment',placesRoutes);
 app.use('/api/favoris',favorisRoutes);
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, "Angular", "index.html"));
+})
 
 app.listen(PORT,()=>
 {
