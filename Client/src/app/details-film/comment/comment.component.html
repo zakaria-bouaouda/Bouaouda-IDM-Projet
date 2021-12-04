@@ -3,7 +3,7 @@
     <p>Commentaire {{index}} : {{comment.commentaire}}</p>
   </ol>
 <div class="" style="display: flex" >
-  <textarea  style="width: 60%" placeholder="add comment here" #query> </textarea>
+  <input type="text" placeholder="ajouter un nouveau commentaire"  #query/> 
   <button class="btn" (click)="addComment(query.value)" style="background-color: #7009e5; color: ghostwhite;"style="background-color: #7009e5; color: ghostwhite;"> Ajouter Commentaire</button>
 </div>
 
